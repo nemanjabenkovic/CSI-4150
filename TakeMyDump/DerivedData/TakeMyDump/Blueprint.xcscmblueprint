@@ -1,0 +1,23 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FC02E4B9BFA15E75D0CEA50D5E9EB6870CF70053",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "FC02E4B9BFA15E75D0CEA50D5E9EB6870CF70053" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "048A7DBB-88C4-494E-8D29-1A6F02426F62",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "FC02E4B9BFA15E75D0CEA50D5E9EB6870CF70053" : "TakeMyDump\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TakeMyDump",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TakeMyDump\/TakeMyDump.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nemanjabenkovic\/TakeMyDump.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FC02E4B9BFA15E75D0CEA50D5E9EB6870CF70053"
+    }
+  ]
+}
