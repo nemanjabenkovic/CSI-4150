@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EDF31D892D02D3B1009F8ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF31D882D02D3B1009F8ACA /* AppDelegate.swift */; };
 		EDF31D8B2D02D3B1009F8ACA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF31D8A2D02D3B1009F8ACA /* SceneDelegate.swift */; };
 		EDF31D8D2D02D3B1009F8ACA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF31D8C2D02D3B1009F8ACA /* HomeViewController.swift */; };
 		EDF31D922D02D3B2009F8ACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDF31D912D02D3B2009F8ACA /* Assets.xcassets */; };
 		EDF31D952D02D3B2009F8ACA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EDF31D942D02D3B2009F8ACA /* Base */; };
+		EDF31DA02D048FB0009F8ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF31D9F2D048FB0009F8ACA /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EDF31D852D02D3B1009F8ACA /* TakeMyDump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeMyDump.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDF31D882D02D3B1009F8ACA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDF31D8A2D02D3B1009F8ACA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EDF31D8C2D02D3B1009F8ACA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EDF31D912D02D3B2009F8ACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDF31D942D02D3B2009F8ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDF31D962D02D3B2009F8ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF31D9F2D048FB0009F8ACA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				EDF31D9C2D02D661009F8ACA /* ViewController */,
-				EDF31D882D02D3B1009F8ACA /* AppDelegate.swift */,
 				EDF31D8A2D02D3B1009F8ACA /* SceneDelegate.swift */,
+				EDF31D9F2D048FB0009F8ACA /* AppDelegate.swift */,
 				EDF31D912D02D3B2009F8ACA /* Assets.xcassets */,
 				EDF31D932D02D3B2009F8ACA /* LaunchScreen.storyboard */,
 				EDF31D962D02D3B2009F8ACA /* Info.plist */,
@@ -142,8 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDF31DA02D048FB0009F8ACA /* AppDelegate.swift in Sources */,
 				EDF31D8D2D02D3B1009F8ACA /* HomeViewController.swift in Sources */,
-				EDF31D892D02D3B1009F8ACA /* AppDelegate.swift in Sources */,
 				EDF31D8B2D02D3B1009F8ACA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +214,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -271,6 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -293,9 +295,9 @@
 				INFOPLIST_FILE = TakeMyDump/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,9 +327,9 @@
 				INFOPLIST_FILE = TakeMyDump/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
