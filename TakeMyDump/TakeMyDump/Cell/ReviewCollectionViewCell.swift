@@ -16,7 +16,8 @@ final class ReviewCollectionViewCell: UICollectionViewCell {
         view.contentMode = .scaleAspectFill
         view.clipsToBounds = true
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.layer.cornerRadius = 200
+        view.layer.cornerRadius = 20
+        view.image = UIImage(named: "dumpy")
         
         return view
     }()
@@ -41,11 +42,12 @@ final class ReviewCollectionViewCell: UICollectionViewCell {
         var view = CosmosView()
         view.rating = 0
         view.settings.updateOnTouch = false
-        view.settings.starSize = 10
-        view.settings.starMargin = 2
+        view.settings.starSize = 15
+        view.settings.starMargin = 0
         view.settings.filledColor = UIColor.orange
         view.settings.emptyBorderColor = UIColor.orange
         view.settings.filledBorderColor = UIColor.orange
+        view.settings.fillMode = .half
         
         return view
     }()
@@ -82,6 +84,12 @@ final class ReviewCollectionViewCell: UICollectionViewCell {
         return stackView
     }()
     
+    private let separatorView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .lightGray
+        return view
+    }()
+    
     @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented in HotPlaceCollectionViewCell")
@@ -90,7 +98,7 @@ final class ReviewCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        [profileStackView, ratingView, contentLabel, dateLabel].forEach {
+        [profileStackView, ratingView, contentLabel, dateLabel, separatorView].forEach {
             self.contentView.addSubview($0)
             $0.translatesAutoresizingMaskIntoConstraints = false
         }
@@ -115,16 +123,21 @@ final class ReviewCollectionViewCell: UICollectionViewCell {
             dateLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8),
             dateLabel.trailingAnchor.constraint(lessThanOrEqualTo: contentView.trailingAnchor, constant: -8),
             dateLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8),
+            
+            separatorView.heightAnchor.constraint(equalToConstant: 1),
+            separatorView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            separatorView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            separatorView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
         ])
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
         
-        self.prepare(id: nil, count: nil, date: nil, rating: nil, content: nil)
+        self.prepare(id: nil, count: 0, date: nil, rating: nil, content: nil)
     }
     
-    func prepare(id: String?, count: Int?, date: String?, rating: Double?, content: String?) {
+    func prepare(id: String?, count: Int, date: String?, rating: Double?, content: String?) {
         self.profileNameLabel.text = id
         self.profileCountLabel.text = "리뷰 \(count)"
         self.ratingView.rating = rating ?? 0

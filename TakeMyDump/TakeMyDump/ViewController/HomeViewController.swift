@@ -22,21 +22,45 @@ final class HomeViewController: UIViewController, CLLocationManagerDelegate {
         configureUI()
         setupNavigationBar()
     }
+    
+    private lazy var adLabel: UILabel = {
+        let label = UILabel()
+        
+        label.text = "광고 배너"
+        label.font = UIFont(name: "S-CoreDream-6Bold", size: 20)
+        label.textColor = .black
+        label.backgroundColor = .lightGray
+        label.textAlignment = .center
+        
+        return label
+    }()
 }
 
 extension HomeViewController {
     func configureUI() {
+        let backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
+        backBarButtonItem.tintColor = .orange
+        self.navigationItem.backBarButtonItem = backBarButtonItem
+        
         view.backgroundColor = .systemBackground
         mapView.translatesAutoresizingMaskIntoConstraints = false
         mapView.layer.cornerRadius = 16
         mapView.layer.masksToBounds = true
         self.view.addSubview(mapView)
         
+        adLabel.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(adLabel)
+        
         NSLayoutConstraint.activate([
             mapView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             mapView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
             mapView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
             mapView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -60),
+            
+            adLabel.topAnchor.constraint(equalTo: mapView.bottomAnchor, constant: 4),
+            adLabel.leadingAnchor.constraint(equalTo: mapView.leadingAnchor),
+            adLabel.trailingAnchor.constraint(equalTo: mapView.trailingAnchor),
+            adLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
         ])
     }
 }
@@ -51,6 +75,7 @@ extension HomeViewController: MKMapViewDelegate {
         mapView.isScrollEnabled = true
         mapView.showsUserLocation = true
         mapView.showsCompass = true
+        mapView.showsUserTrackingButton = true
         
         mapView.userTrackingMode = .follow
         
@@ -60,20 +85,14 @@ extension HomeViewController: MKMapViewDelegate {
         }
     }
     
-    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
-        let region = MKCoordinateRegion(center: userLocation.coordinate,
-                                        latitudinalMeters: 500,
-                                        longitudinalMeters: 500)
-        mapView.setRegion(region, animated: true)
-    }
-    
     func createAnnotations() {
         /// Mock Location Data
         let locations = [
             ("대우월드타운상가", 37.546613, 127.019327),
             ("시온교회", 37.546385, 127.018230),
             ("용비쉼터", 37.545463, 127.020385),
-            ("아이들세상유치원", 37.545311, 127.017947)
+            ("아이들세상유치원", 37.545311, 127.017947),
+            ("연세대학교 공학관", 37.561908, 126.936731),
         ]
         
         for location in locations {
@@ -100,6 +119,15 @@ extension HomeViewController: MKMapViewDelegate {
         }
         
         return annotationView
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        guard let annotationTitle = annotationView.annotation?.title else { return }
+        
+        // Navigate to ReviewViewController
+        let reviewVC = ReviewViewController()
+        reviewVC.locationTitle = annotationTitle  // 전달할 데이터
+        navigationController?.pushViewController(reviewVC, animated: true)
     }
 }
 
@@ -147,5 +175,19 @@ extension HomeViewController {
         logoButton.frame = CGRect(x: 0, y: 0, width: 40, height: 40)  // 버튼 크기 조정
         let logoBarButton = UIBarButtonItem(customView: logoButton)
         navigationItem.leftBarButtonItem = logoBarButton
+        
+        let settingsButton = UIBarButtonItem(
+            image: UIImage(systemName: "gearshape"),  // 시스템 설정 아이콘
+            style: .plain,
+            target: self,
+            action: #selector(settingsButtonTapped)
+        )
+        settingsButton.tintColor = .orange  // 아이콘 색상 설정
+        navigationItem.rightBarButtonItem = settingsButton
     }
+    
+    @objc func settingsButtonTapped() {
+            let settingsVC = SettingViewController() 
+            navigationController?.pushViewController(settingsVC, animated: true)
+        }
 }
