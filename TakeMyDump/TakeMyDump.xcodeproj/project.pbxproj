@@ -7,23 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EDF31D892D02D3B1009F8ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF31D882D02D3B1009F8ACA /* AppDelegate.swift */; };
+		EA9AB95AA2C962DFD6F5069C /* Pods_TakeMyDump.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB67CD320ED93CEAB70AF6DE /* Pods_TakeMyDump.framework */; };
 		EDF31D8B2D02D3B1009F8ACA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF31D8A2D02D3B1009F8ACA /* SceneDelegate.swift */; };
-		EDF31D8D2D02D3B1009F8ACA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF31D8C2D02D3B1009F8ACA /* ViewController.swift */; };
-		EDF31D902D02D3B1009F8ACA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EDF31D8F2D02D3B1009F8ACA /* Base */; };
+		EDF31D8D2D02D3B1009F8ACA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF31D8C2D02D3B1009F8ACA /* HomeViewController.swift */; };
 		EDF31D922D02D3B2009F8ACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDF31D912D02D3B2009F8ACA /* Assets.xcassets */; };
 		EDF31D952D02D3B2009F8ACA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EDF31D942D02D3B2009F8ACA /* Base */; };
+		EDF31DA02D048FB0009F8ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF31D9F2D048FB0009F8ACA /* AppDelegate.swift */; };
+		EDF31DA42D0596C0009F8ACA /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF31DA32D0596C0009F8ACA /* ReviewViewController.swift */; };
+		EDF31DB12D05A4B8009F8ACA /* SCDream1.otf in Resources */ = {isa = PBXBuildFile; fileRef = EDF31DAE2D05A49A009F8ACA /* SCDream1.otf */; };
+		EDF31DB22D05A4B8009F8ACA /* SCDream2.otf in Resources */ = {isa = PBXBuildFile; fileRef = EDF31DAA2D05A49A009F8ACA /* SCDream2.otf */; };
+		EDF31DB32D05A4B8009F8ACA /* SCDream3.otf in Resources */ = {isa = PBXBuildFile; fileRef = EDF31DAF2D05A49A009F8ACA /* SCDream3.otf */; };
+		EDF31DB42D05A4B8009F8ACA /* SCDream4.otf in Resources */ = {isa = PBXBuildFile; fileRef = EDF31DA82D05A49A009F8ACA /* SCDream4.otf */; };
+		EDF31DB52D05A4B8009F8ACA /* SCDream5.otf in Resources */ = {isa = PBXBuildFile; fileRef = EDF31DAC2D05A49A009F8ACA /* SCDream5.otf */; };
+		EDF31DB62D05A4B8009F8ACA /* SCDream6.otf in Resources */ = {isa = PBXBuildFile; fileRef = EDF31DAB2D05A49A009F8ACA /* SCDream6.otf */; };
+		EDF31DB72D05A4B8009F8ACA /* SCDream7.otf in Resources */ = {isa = PBXBuildFile; fileRef = EDF31DB02D05A49A009F8ACA /* SCDream7.otf */; };
+		EDF31DB82D05A4B8009F8ACA /* SCDream8.otf in Resources */ = {isa = PBXBuildFile; fileRef = EDF31DA92D05A49A009F8ACA /* SCDream8.otf */; };
+		EDF31DB92D05A4B8009F8ACA /* SCDream9.otf in Resources */ = {isa = PBXBuildFile; fileRef = EDF31DAD2D05A49A009F8ACA /* SCDream9.otf */; };
+		EDF31DBB2D062955009F8ACA /* ReviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF31DBA2D062955009F8ACA /* ReviewCollectionViewCell.swift */; };
+		EDF31DBF2D063403009F8ACA /* ReviewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF31DBE2D063403009F8ACA /* ReviewButton.swift */; };
+		EDF31DC12D0635BA009F8ACA /* WriteReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF31DC02D0635BA009F8ACA /* WriteReviewViewController.swift */; };
+		EDF31DC32D0639DA009F8ACA /* ModalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF31DC22D0639DA009F8ACA /* ModalButton.swift */; };
+		EDF31DC72D06AED5009F8ACA /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF31DC62D06AED5009F8ACA /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03980B315D936105E19D4BD7 /* Pods-TakeMyDump.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeMyDump.debug.xcconfig"; path = "Target Support Files/Pods-TakeMyDump/Pods-TakeMyDump.debug.xcconfig"; sourceTree = "<group>"; };
+		AB67CD320ED93CEAB70AF6DE /* Pods_TakeMyDump.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeMyDump.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0A429AE822AC54279933761 /* Pods-TakeMyDump.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeMyDump.release.xcconfig"; path = "Target Support Files/Pods-TakeMyDump/Pods-TakeMyDump.release.xcconfig"; sourceTree = "<group>"; };
 		EDF31D852D02D3B1009F8ACA /* TakeMyDump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeMyDump.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDF31D882D02D3B1009F8ACA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDF31D8A2D02D3B1009F8ACA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EDF31D8C2D02D3B1009F8ACA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EDF31D8F2D02D3B1009F8ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDF31D8C2D02D3B1009F8ACA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EDF31D912D02D3B2009F8ACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDF31D942D02D3B2009F8ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDF31D962D02D3B2009F8ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF31D9F2D048FB0009F8ACA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDF31DA32D0596C0009F8ACA /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		EDF31DA82D05A49A009F8ACA /* SCDream4.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream4.otf; sourceTree = "<group>"; };
+		EDF31DA92D05A49A009F8ACA /* SCDream8.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream8.otf; sourceTree = "<group>"; };
+		EDF31DAA2D05A49A009F8ACA /* SCDream2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream2.otf; sourceTree = "<group>"; };
+		EDF31DAB2D05A49A009F8ACA /* SCDream6.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream6.otf; sourceTree = "<group>"; };
+		EDF31DAC2D05A49A009F8ACA /* SCDream5.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream5.otf; sourceTree = "<group>"; };
+		EDF31DAD2D05A49A009F8ACA /* SCDream9.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream9.otf; sourceTree = "<group>"; };
+		EDF31DAE2D05A49A009F8ACA /* SCDream1.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream1.otf; sourceTree = "<group>"; };
+		EDF31DAF2D05A49A009F8ACA /* SCDream3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream3.otf; sourceTree = "<group>"; };
+		EDF31DB02D05A49A009F8ACA /* SCDream7.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SCDream7.otf; sourceTree = "<group>"; };
+		EDF31DBA2D062955009F8ACA /* ReviewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCollectionViewCell.swift; sourceTree = "<group>"; };
+		EDF31DBE2D063403009F8ACA /* ReviewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewButton.swift; sourceTree = "<group>"; };
+		EDF31DC02D0635BA009F8ACA /* WriteReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteReviewViewController.swift; sourceTree = "<group>"; };
+		EDF31DC22D0639DA009F8ACA /* ModalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalButton.swift; sourceTree = "<group>"; };
+		EDF31DC62D06AED5009F8ACA /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +63,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA9AB95AA2C962DFD6F5069C /* Pods_TakeMyDump.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97FD0060AF1E438BB618A667 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB67CD320ED93CEAB70AF6DE /* Pods_TakeMyDump.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC46875B21E6C31B2C598C76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03980B315D936105E19D4BD7 /* Pods-TakeMyDump.debug.xcconfig */,
+				B0A429AE822AC54279933761 /* Pods-TakeMyDump.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EDF31D7C2D02D3B1009F8ACA = {
 			isa = PBXGroup;
 			children = (
 				EDF31D872D02D3B1009F8ACA /* TakeMyDump */,
 				EDF31D862D02D3B1009F8ACA /* Products */,
+				EC46875B21E6C31B2C598C76 /* Pods */,
+				97FD0060AF1E438BB618A667 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +108,61 @@
 		EDF31D872D02D3B1009F8ACA /* TakeMyDump */ = {
 			isa = PBXGroup;
 			children = (
-				EDF31D882D02D3B1009F8ACA /* AppDelegate.swift */,
+				EDF31DBD2D0633F5009F8ACA /* Button */,
+				EDF31DBC2D06295A009F8ACA /* Cell */,
+				EDF31DA52D059F86009F8ACA /* Font */,
+				EDF31D9C2D02D661009F8ACA /* ViewController */,
 				EDF31D8A2D02D3B1009F8ACA /* SceneDelegate.swift */,
-				EDF31D8C2D02D3B1009F8ACA /* ViewController.swift */,
-				EDF31D8E2D02D3B1009F8ACA /* Main.storyboard */,
+				EDF31D9F2D048FB0009F8ACA /* AppDelegate.swift */,
 				EDF31D912D02D3B2009F8ACA /* Assets.xcassets */,
 				EDF31D932D02D3B2009F8ACA /* LaunchScreen.storyboard */,
 				EDF31D962D02D3B2009F8ACA /* Info.plist */,
 			);
 			path = TakeMyDump;
+			sourceTree = "<group>";
+		};
+		EDF31D9C2D02D661009F8ACA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EDF31D8C2D02D3B1009F8ACA /* HomeViewController.swift */,
+				EDF31DA32D0596C0009F8ACA /* ReviewViewController.swift */,
+				EDF31DC02D0635BA009F8ACA /* WriteReviewViewController.swift */,
+				EDF31DC62D06AED5009F8ACA /* SettingViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EDF31DA52D059F86009F8ACA /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				EDF31DAE2D05A49A009F8ACA /* SCDream1.otf */,
+				EDF31DAA2D05A49A009F8ACA /* SCDream2.otf */,
+				EDF31DAF2D05A49A009F8ACA /* SCDream3.otf */,
+				EDF31DA82D05A49A009F8ACA /* SCDream4.otf */,
+				EDF31DAC2D05A49A009F8ACA /* SCDream5.otf */,
+				EDF31DAB2D05A49A009F8ACA /* SCDream6.otf */,
+				EDF31DB02D05A49A009F8ACA /* SCDream7.otf */,
+				EDF31DA92D05A49A009F8ACA /* SCDream8.otf */,
+				EDF31DAD2D05A49A009F8ACA /* SCDream9.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		EDF31DBC2D06295A009F8ACA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EDF31DBA2D062955009F8ACA /* ReviewCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EDF31DBD2D0633F5009F8ACA /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				EDF31DBE2D063403009F8ACA /* ReviewButton.swift */,
+				EDF31DC22D0639DA009F8ACA /* ModalButton.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDF31D992D02D3B2009F8ACA /* Build configuration list for PBXNativeTarget "TakeMyDump" */;
 			buildPhases = (
+				D8645AAB14CD36D5AE5565D2 /* [CP] Check Pods Manifest.lock */,
 				EDF31D812D02D3B1009F8ACA /* Sources */,
 				EDF31D822D02D3B1009F8ACA /* Frameworks */,
 				EDF31D832D02D3B1009F8ACA /* Resources */,
+				27C73F2EB5FB975CDBD714FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,36 +225,84 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDF31DB12D05A4B8009F8ACA /* SCDream1.otf in Resources */,
+				EDF31DB22D05A4B8009F8ACA /* SCDream2.otf in Resources */,
+				EDF31DB32D05A4B8009F8ACA /* SCDream3.otf in Resources */,
+				EDF31DB42D05A4B8009F8ACA /* SCDream4.otf in Resources */,
+				EDF31DB52D05A4B8009F8ACA /* SCDream5.otf in Resources */,
+				EDF31DB62D05A4B8009F8ACA /* SCDream6.otf in Resources */,
+				EDF31DB72D05A4B8009F8ACA /* SCDream7.otf in Resources */,
+				EDF31DB82D05A4B8009F8ACA /* SCDream8.otf in Resources */,
+				EDF31DB92D05A4B8009F8ACA /* SCDream9.otf in Resources */,
 				EDF31D922D02D3B2009F8ACA /* Assets.xcassets in Resources */,
 				EDF31D952D02D3B2009F8ACA /* Base in Resources */,
-				EDF31D902D02D3B1009F8ACA /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27C73F2EB5FB975CDBD714FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TakeMyDump/Pods-TakeMyDump-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TakeMyDump/Pods-TakeMyDump-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TakeMyDump/Pods-TakeMyDump-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8645AAB14CD36D5AE5565D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TakeMyDump-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EDF31D812D02D3B1009F8ACA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDF31D8D2D02D3B1009F8ACA /* ViewController.swift in Sources */,
-				EDF31D892D02D3B1009F8ACA /* AppDelegate.swift in Sources */,
+				EDF31DA02D048FB0009F8ACA /* AppDelegate.swift in Sources */,
+				EDF31D8D2D02D3B1009F8ACA /* HomeViewController.swift in Sources */,
+				EDF31DA42D0596C0009F8ACA /* ReviewViewController.swift in Sources */,
+				EDF31DC12D0635BA009F8ACA /* WriteReviewViewController.swift in Sources */,
+				EDF31DBB2D062955009F8ACA /* ReviewCollectionViewCell.swift in Sources */,
+				EDF31DC72D06AED5009F8ACA /* SettingViewController.swift in Sources */,
+				EDF31DC32D0639DA009F8ACA /* ModalButton.swift in Sources */,
 				EDF31D8B2D02D3B1009F8ACA /* SceneDelegate.swift in Sources */,
+				EDF31DBF2D063403009F8ACA /* ReviewButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EDF31D8E2D02D3B1009F8ACA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EDF31D8F2D02D3B1009F8ACA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EDF31D932D02D3B2009F8ACA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -218,6 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -275,6 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -287,19 +437,21 @@
 		};
 		EDF31D9A2D02D3B2009F8ACA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03980B315D936105E19D4BD7 /* Pods-TakeMyDump.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XHR9MP59GX;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TakeMyDump/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,27 +459,33 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = evolroop.TakeMyDump;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		EDF31D9B2D02D3B2009F8ACA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0A429AE822AC54279933761 /* Pods-TakeMyDump.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XHR9MP59GX;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TakeMyDump/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +493,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = evolroop.TakeMyDump;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
